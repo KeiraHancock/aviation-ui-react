@@ -99,11 +99,6 @@ export default function Home() {
           ))}
         </tbody>
       </table>
-
-      <p style={{ marginTop: 18, opacity: 0.7 }}>
-        Next steps: add Admin CRUD screens for Flights/Airports/Airlines/Gates +
-        forms + validation.
-      </p>
     </div>
   );
 }
