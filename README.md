@@ -1,16 +1,65 @@
-# React + Vite
+SDAT + DEV OPS Final Sprint - Alicia & Keira
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Project Overview
+this project is a full-stack application built to manage and display flight arrivals and departures from multiple airports.
+it supports both public users for viewing flight information and admin users
+managing system data. Spring boot is used for the backend and React for the frontend.
 
-Currently, two official plugins are available:
+System Entities
+The system includes
+- Flight
+- Aircraft
+- Airline
+- Gate
+- Airport
+Each entity is related and supports CRUD operations through the API and admin UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Public Features:
+- Viewing arriving and departing flights
+- Switch between airports
+- See flight details such as Scheduled time, Arrival/Departure type, Flight number, Airline, Gate, Destination and Status
+- Error handling if API is unavailable.
 
-## React Compiler
+Admin Features:
+- Flight Management
+Create, view, and delete flights
+Assign aircraft, airline and gate
+Form validation to prevent invalid input
+- Aircraft Management
+Add and view aircraft
+Validate model, manufacturer and capacity
+- Gates Management
+Add and view gates
+Handling incase backend API is unavailable
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Docker Support
+This project is structured to be containerized using Docker for both frontend and backend services.
 
-## Expanding the ESLint configuration
+Running the Project Locally
+1. Open the backend project
+2. Configure PostgreSQL connection
+3. Run the Spring Boot Application
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Frontend
+npm install
+npm run dev
+
+front end will run at: http://localhost:5173
+
+the backend API runs at: http://localhost8080
+
+Repository Structure
+Frontend:
+React UI and Admin Dashboard
+
+Backend:
+Spring Boot API and database logic
+
+Team Contribution
+Keira - 
+
+
+
+Alicia - I was responsible for developing the Frontend including arrivals and departures view, admin CRUD pages for flights, aircraft and gates as well as validation and error handling.
+I also created the user stories and manual test scenarios.
+
