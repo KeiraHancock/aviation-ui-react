@@ -50,6 +50,34 @@ Handling incase backend API is unavailable
 Docker Support
 This project is structured to be containerized using Docker for both frontend and backend services.
 
+Docker
+Running the Backend with Docker
+Prerequisites
+- Docker + Docker Compose installed
+Start API + Database
+```
+docker-compose up --build
+```
+Stop Containers
+```
+docker-compose down
+```
+Notes
+API runs at: http://localhost:8080
+PostgreSQL runs at: localhost:5432
+Running the Frontend with Docker
+Build the image
+```
+docker build -t aviation-frontend .
+```
+Run the container
+```
+docker run --rm -p 5173:5173 aviation-frontend
+```
+Open in browser
+http://localhost:5173
+
+
 Running the Project Locally
 1. Open the backend project
 2. Configure PostgreSQL connection
