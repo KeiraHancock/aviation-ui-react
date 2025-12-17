@@ -5,6 +5,21 @@ this project is a full-stack application built to manage and display flight arri
 it supports both public users for viewing flight information and admin users
 managing system data. Spring boot is used for the backend and React for the frontend.
 
+Technology Stack
+Frontend
+- React
+- JavaScript
+- Fetch API
+- 
+BackEnd
+- Java Spring Boot
+- RESTful API
+- 
+Database
+- PostgreSQL
+
+
+
 System Entities
 The system includes
 - Flight
