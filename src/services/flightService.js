@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8080/api/flights";
+const API_URL = "http://3.90.191.88:8080/api/flights";
 
 // Get all flights (admin or general)
 export const getFlights = async () => {
