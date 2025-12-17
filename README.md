@@ -69,12 +69,3 @@ React UI and Admin Dashboard
 
 Backend:
 Spring Boot API and database logic
-
-Team Contribution
-Keira - 
-
-
-
-Alicia - I was responsible for developing the Frontend including arrivals and departures view, admin CRUD pages for flights, aircraft and gates as well as validation and error handling.
-I also created the user stories and manual test scenarios.
-
